@@ -8,14 +8,12 @@ class Creature:
 
        
 class Monster(Creature):
-    def __init__(self,family,name,size,health):
-        self.family = family
-
+    def __init__(self,name,size,health):
         super(Monster,self).__init__(name, health, size)
 
     def __str__(self):
-        return f"I am {self.name} of family {self.family}, i am size {self.size} and I have {self.health} HP"
-greg = Monster("Goblin","Greg"," Large", "54")
+        return f"I am {self.name}, i am size {self.size} and I have {self.health} HP"
+
 
 
 
